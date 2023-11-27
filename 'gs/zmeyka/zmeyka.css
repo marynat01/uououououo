@@ -1,0 +1,727 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+    }
+
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow: hidden;
+    border-width: 0.5px;
+    border: #ffffff;
+    border-style: solid;
+    box-shadow: 0px 0px 17px #ffffff
+}
+
+
+
+.game-details {
+    color: #B8C6DC;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .play-board {
+    height: 75%;
+    width: 100%;
+    display: grid;
+    background: #ced2db;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  }
+
+
+  .play-board .head {
+    background: #eb0707;
+    border-width: 1px;
+    border: #eb0707;
+    border-style: solid;
+    /* box-shadow: 0.5px 1px 5px #eb0707; */
+  }
+
+  .play-board .food {
+    background: #33556d;
+    border-radius: 10px;
+    
+  }
+
+
+
+  /* .control {
+    width: 100%;
+    color: aliceblue;
+    width: calc(100% / 4);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-right: 1px solid #64708b;
+  } */
+
+  /* .food {
+    display: flex;
+} */
+
+
+
+
+/* .btn {
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    display: flex;
+} */
+
+/* .btn i {
+    width: 150px;
+    height: 35px;
+    background-color: aquamarine;
+    border: 1px solid;
+    border-radius: 1px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+    width: calc(100% / 4);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.controls i {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #B8C6DC;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171B26;
+  } */
+
+
+
+  
+.btn {
+    display: none;
+    justify-content: space-between;
+  }
+
+
+  .btn i {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #B8C6DC;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171B26;
+  }
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+      width: 90vmin;
+      height: 115vmin;
+    }
+    .game-details {
+      font-size: 1rem;
+      padding: 15px 27px;
+    }
+    .btn {
+      display: flex;
+    }
+    .btn i {
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .h1, h1 {
+    margin: 30px;
+    font-size: 15.5rem;
+}
+
+
+
+
+.block {
+    width: auto;
+    height: auto;
+    background-color: #0f0f0f;
+}
+
+
+
+.mar {
+    width: 390px;
+    border-radius: 100%;
+    border-width: 20px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    padding: 0.7em;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.non {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 90px;
+}
+
+
+.raze {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: right;
+}
+
+.rol {
+    width: 200px;
+    border-radius: 20%;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .non {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+.top {
+    background-color: black;
+}
+
+
+.heade {
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+}
+
+
+.rof {
+    font-size: 25px;
+    color: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+
+.io a {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    gap: 10px;
+}
+
+
+
+html, h1 {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    .perk {
+        display: none;
+        width: 30px;
+        border-radius: 10%;
+        background-color: aliceblue;
+        
+    }
+
+/* @media screen and (max-width: 320px) {
+
+
+
+    .perk {
+        display: flex;
+        position: absolute;
+        margin-left: 350px;
+    }
+
+    .io .perk {
+        display: block;
+        top: 20px;
+        left: 20px;
+        background-color: aliceblue;
+        justify-content: right;
+        position: absolute;
+    }
+    .heade {
+        width: 125%;
+        
+    }
+
+
+
+    .heade, .io {
+        margin-left: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .io {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(170, 150, 150, 0.514);
+        width: 430px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;       
+        backdrop-filter: blur(7px);
+        transition: all 0.5s ease;
+        margin-left: -120%;
+    }
+
+    .io.perk {
+        margin-left: 0;
+    }
+    .mom .uou2,.uou1,.uou3,.uou4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+     .mom {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 1.9em;
+     }
+     
+     .mom .uou3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .mom .uou4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .mom .uou1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .non {
+        margin: top 100px;;
+    }
+     nav.io.perk{
+        display: flex;
+        justify-content: center;
+        height: 975px;
+        width: 425px;
+        margin-top: -55px;
+     }
+} */
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+  }
+
+
+
+    .perk {
+        display: flex;
+        position: absolute;
+        margin-left: 521px;
+    }
+
+    .io .perk {
+        display: block; /* Отображение кнопки-меню на мобильных устройствах */
+        top: 20px; /* Позиционирование кнопки сверху */
+        left: 20px; /* Позиционирование кнопки слева */
+        background-color: aliceblue;
+        justify-content: right;
+        position: absolute;
+    }
+    .heade {
+        width: 100%;
+        display: flex;
+    }
+
+
+
+    .heade.perk{
+      justify-content: first baseline;
+    }
+
+
+
+    .heade, .io {
+        margin-left: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .io {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(170, 150, 150, 0.514);
+        width: 430px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;       
+        backdrop-filter: blur(7px);
+        transition: all 0.5s ease;
+        margin-left: -120%;
+    }
+
+    .io.perk {
+        margin-left: 0;
+    }
+    .mom .uou2,.uou1,.uou3,.uou4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+     .mom {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 1.9em;
+     }
+     
+     .mom .uou3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .mom .uou4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .mom .uou1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+    .non {
+        margin: top 100px;;
+    }
+     nav.io.perk{
+        display: flex;
+        justify-content: center;
+        height: 975px;
+        width: 425px;
+        margin-top: -55px;
+     }
+}
+
+
+
+@media screen and (max-width: 426px){
+
+  .perk {
+      display: flex;
+      position: absolute;
+      margin-left: 70%;
+  }
+
+  .play-board {
+    height: 75%;
+    width: 100%;
+    display: grid;
+    background-color: #B8C6DC;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  }
+
+  .perk {
+    margin-left: 70%;
+    display: flex;
+    position: absolute;
+    width: 20px;
+
+  }
+
+
+
+  .rof {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 56vh;
+    }
+    .game-details {
+        font-size: 11px;
+        padding: 15px 27px;
+    }
+    .controls {
+        display: flex;
+    }
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    .game-details {
+        display: flex;
+        font-size: 10px;
+        padding: 14px 12px;
+        flex-direction: row;
+        height: 10vh;
+    }
+    
+    
+    
+    .io {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(170, 150, 150, 0.514);
+        width: 430px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(7px);
+        transition: all 0.5s ease;
+        margin-left: -174%;
+    }
+    
+    
+    nav.io.perk {
+        display: flex;
+        justify-content: center;
+        height: 800px;
+        width: 100%;
+        margin-top: -55px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 200px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 31px;
+        max-height: 24px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        
+    }
+    
+    
+    
+    .io {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(170, 150, 150, 0.514);
+        width: 424px;
+        height: 496px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(7px);
+        transition: all 0.5s ease;
+        margin-left: -275%;
+    }
+}
